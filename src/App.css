@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Nunito", sans-serif;
+  background-color: #1c1a26;
+  color: #fff;
+}
+
+.mainClass {
+  width: 100%;
+  height: auto;
+  padding: 40px 30px;
+}
+.expensesData{
+  max-width: 1200px;
+  height: auto;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  text-align: start;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.details{
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+  gap: 18px;
+}
+.inputData{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+  gap: 7px;
+  flex-direction: column;
+  position: relative;
+}
+.inputData label{
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+}
+.inputData input{
+  width: 93%;
+  height: auto;
+  padding: 8px 5px;
+  border-radius: 6px;
+  outline: none;
+  font-size: 15px;
+  /* border: 1px solid #FC1AEA;
+  box-shadow: 0px 1px 7px 1px #FC1AEA; */
+  border: 1px solid #bdd608;
+  box-shadow: 0px 2px 9px 0px #bdd608;
+}
+.addBtn{
+  width: 93%;
+  height: auto;
+  outline: none;
+  padding: 8px;
+  background-color: gainsboro;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-top: 10px;
+  /* border: 1px solid #FC1AEA;
+  box-shadow: 0px 1px 7px 1px #FC1AEA; */
+  border: 1px solid #bdd608;
+  box-shadow: 0px 2px 9px 0px #bdd608;
+}
+.tableData{
+  width: 50%;
+  height: auto;
+}
+.tableForm{
+  width: 100%;
+  height: auto;
+}
+table, th, td {
+  /* border: 1px solid #FC1AEA; */
+  border: 1px solid #bdd608;
+  /* box-shadow: 0px 2px 9px 0px #bdd608; */
+  border-collapse: collapse;
+  text-align: start;
+  padding: 5px;
+  font-size: 14px;
+}
+.table{
+  width: 100%;
+  height: auto;
+  text-align: start;
+}
+.selectCat{
+  width: 93%;
+  height: auto;
+  padding: 8px 5px;
+  border-radius: 6px;
+  outline: none;
+  font-size: 15px;
+  /* border: 1px solid #FC1AEA;
+  box-shadow: 0px 1px 7px 1px #FC1AEA; */
+  border: 1px solid #bdd608;
+  box-shadow: 0px 2px 9px 0px #bdd608;
+}
+.errorsHandel{
+  font-size: 12px;
+  font-weight: 600;
+  color: red;
+  margin: 0;
+  position: absolute;
+  /* bottom: -17px; */
+  top: 100%;
+}
+.selctOptions{
+  width: 100%;
+  height: auto;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+    font-weight: 600;
+}
+.total{
+  font-size: 16px;
+  font-weight: 700;
+}
+.context_menu {
+  border: 1px solid #00000057;
+  border-radius: 7px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+  width: 5%;
+  background-color: antiquewhite;
+  position: absolute;
+}
+.menutarget{
+  font-size: 13px;
+  cursor: pointer;
+  background-color: antiquewhite;
+  border: 1px solid #e577dc;
+    box-shadow: 0px 1px 7px 1px #e577dc;
+  font-weight: 800;
+  transition: all ease 0.10s;
+}
+.menutarget:hover{
+  color:  #600259;
+}
+h1{
+  text-align: center;
+  color: #bdd608;
+ }
+
+
+@media (max-width:768px){
+  .details{
+    width: 100%;
+  }
+  .mainClass{
+    padding: 20px 13px;
+  }
+  .inputData input{
+    width: 100%;
+  }
+  .addBtn{
+    width: 100%;
+  }
+  .tableData{
+    width: 100%;
+    margin-top: 20px;
+  }
+  table, th, td, .selctOptions, .total{
+    font-size: 11px;
+  }
+
+  .selectCat{
+    width: 100%;
+  }
+  h1{
+   text-align: center;
+   font-size: 24px;
+  }
+  .expensesData{
+    margin-top: 5px;
+  }
+  .mainClass {
+    padding: 20px 10px;
+  }
+  .context_menu{
+    display: none;
+  }
+}
+/* FC1AEA */
